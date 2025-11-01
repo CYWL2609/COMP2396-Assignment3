@@ -1,5 +1,5 @@
 package assignment3;
 
-public class Command {
-
+public interface Command {
+	public String execute(VendingMachine v, String[] cmdParts);
 }
