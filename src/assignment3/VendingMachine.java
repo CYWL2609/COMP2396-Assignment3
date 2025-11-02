@@ -58,7 +58,7 @@ public class VendingMachine {
 			insertedCoins.clear();
 			products.get(i).changeQuantity(-1);
 			int change = bal - products.get(i).getPrice();
-			String message = "Dropped " + name + ". Paid $" + products.get(i).getPrice() + ". ";
+			String message = "Dropped " + name + ". Paid $" + bal + ". ";
 			if (change == 0) {
 				message += "No change.";
 			} else {
